@@ -1,6 +1,7 @@
-# lollydoo
+# lillydoo
 
-code:
+run code:
+
 $yarn install
 $yarn start
 
