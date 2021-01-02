@@ -1,5 +1,15 @@
-$bg-color: white;
+@import '~normalize.css';
+@import './vendors/flexboxgrid.min.css';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'btns.scss';
+@import 'tipography.scss';
 
-body {
- background: $bg-color;
+.container {
+  padding: 1rem;
+}
+
+.primary {
+  color: $primary;
 }

@@ -1,0 +1,30 @@
+// Colors:
+
+$black: #000;
+$white: #fff;
+$green: #00afab;
+$green-light: #99dfdd;
+$grey: #7c7c7c;
+
+// Elements Colors
+
+$package-active: $green;
+$primary: $green;
+$hover: $green-light;
+$text-color: $black;
+$text-color-2: $grey;
+$link-color: $green;
+$border-color: $grey;
+
+// font
+
+$font: 'Cera Pro', Helvetica, Arial, sans-serif;
+
+// Breakpoints
+
+$breakpoints: (
+  'sm': 49rem,
+  'md': 65rem,
+  'lg': 76rem,
+  'xlg': 96rem
+) !default;

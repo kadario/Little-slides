@@ -19,6 +19,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader'
       },
@@ -28,12 +36,17 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '../assets/fonts',
+              publicPath: '../assets/fonts'
+            }
+          }
+        ]
       }
     ]
   },

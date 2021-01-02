@@ -1,5 +1,6 @@
 <template>
   <div class="package-slides">
+    <img v-bind:src="artboard" class="artboard" />
     <div class="package-slides--list">
       <div
         class="package-slides--list-item"
@@ -7,47 +8,62 @@
         v-bind:class="{active: index == isActive}"
         v-bind:key="index"
         >
-        {{ item }}
+        <img v-bind:src="item"  class="package-slides--img"/>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-export default {
-  name: 'PackageSlides',
-  data() {
-    return {
-      slideItems: {
-        1: 'oneslide',
-        2: 'two slide',
-        3: '3 slide',
-        4: '4 slide',
-        5: '5 slide'
+  export default {
+    name: 'PackageSlides',
+    props: {
+      artboard: String,
+      slideItems: Array
+    },
+    computed: {
+      isActive() {
+        return this.$store.getters.activeIndex;
       }
     }
-  },
-
-  computed: {
-    isActive() {
-      return this.$store.getters.activeIndex;
-    }
   }
-}
 </script>
 
 <style lang="scss">
   .package-slides {
+    position: relative;
+
     &--list {
-      border: 1px solid red;
+      position: relative;
     }
 
     &--list-item {
-      display: none;
+      opacity: 0;
+      transition: all ease-in-out .3s;
+
+      &:not(.active) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
 
       &.active {
-        display: block;
+        opacity: 1;
       }
+    }
+
+    &--img {
+      width: 100%;
+    }
+
+    .artboard {
+      box-shadow: -2px 2px 6px -3px rgba(0,0,0,.4);
+      position: absolute;
+      width: 24%;
+      top: 13%;
+      left: 9%;
+      z-index: 2;
     }
   }
 </style>

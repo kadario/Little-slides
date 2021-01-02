@@ -3,7 +3,7 @@ import { createStore } from 'vuex'
 const store = createStore({
   state () {
     return {
-      activeIndex: 1
+      activeIndex: 0
     }
   },
   getters: {

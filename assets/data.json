@@ -1,0 +1,25 @@
+{
+  "title": "Entdecke unsere Hautfreundlichkeit",
+  "subtitle": "Wähle Deine Größe",
+  "artboard": "assets/img/Artboard.svg",
+  "slideItems": [
+    "assets/img/lillydoo-testpaket-10.jpeg",
+    "assets/img/lillydoo-testpaket-20.jpeg",
+    "assets/img/lillydoo-testpaket-30.jpeg",
+    "assets/img/lillydoo-testpaket-40.jpeg",
+    "assets/img/lillydoo-testpaket-50.jpeg"
+  ],
+  "numberItems": [
+    {"itemTitle": "1", "itemDescription": "(2-5 KG)"},
+    {"itemTitle": "2", "itemDescription": "(4-8 KG)"},
+    {"itemTitle": "3", "itemDescription": "(6-10 KG)"},
+    {"itemTitle": "4", "itemDescription": "(9-14 KG)"},
+    {"itemTitle": "5", "itemDescription": "(11-16 KG)"}
+  ],
+  "descriptionText": "Teste jetzt unsere hautfreundlichen Windeln und erhalte unsere Feuchttücher mit 99 % Wasser zu Größe 1 - 3 oder die Sensitiven Feuchttücher zu Größe 4 - 5.",
+  "descriptionList": [
+    "Wir zahlen die Produkte, Du nur den Versand.",
+    "Automatischer Übergang ins jederzeit kündbare Windel-Abo ab 49,50 € pro Lieferung.",
+    "Preise inkl. MwSt., ggf. zzgl. <a href=\"#\">Versandkosten</a>"
+  ]
+}
